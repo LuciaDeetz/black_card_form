@@ -1,0 +1,101 @@
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image: URL(gargantua-interstellar.jpg);
+    /* Makes background image responsive and look good */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.ocra-box {
+    max-width: 750px;
+    background-color:#dad5ced0;
+    border-radius: 5px;
+    line-height: 1.5;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 35px 50px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: -10px;
+}
+
+.input-box, textarea, #dropdown {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #3b3b3b;
+    width: 100%;
+}
+
+.label-box {
+    display: block;
+    line-height: 2;
+}
+
+.input-box {
+    margin-top: 10px;
+}
+
+#destination-box, #last-meal-box {
+    margin-bottom: 25px;
+}
+
+#destination-box p {
+    margin-bottom: 3px;
+}
+
+#item-box, .input-box {
+    margin-bottom: 35px;
+}
+
+#item-box p, #last-meal-box p, #personal-choice p {
+    margin-bottom: 10px;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+#panic {
+    display: block;
+    margin: auto;
+}
+
+#centered-button-box {
+    position: relative;
+    height: 150px;
+}
+
+#towel-line {
+    margin-top: -10px;
+}
+
+button {
+    font-size: 150%;
+    padding: 25px;
+    background-color: #dfbc8a;
+    border-radius: 5px;
+    border: 1px solid #3b3b3b;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

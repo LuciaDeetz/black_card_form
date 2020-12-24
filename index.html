@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Black Card out of Reality</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <main>
+        <header class="ocra-box center-text">
+            <h1 id="title">Your Black Card out of Reality</h1>
+            <p id="description">Tired of your boss, bills, wife?
+                <br>
+                Apply for a Black Card today and win a one-way trip to Nothingness!
+                <br>
+                (Don't worry: it won't hurt!*)
+            </p>
+        </header>
+
+        <form id="survey-form" class="ocra-box" action="#">
+            <div class="bold-text">
+                <label id="name-label" for="name">Your Name</label>
+                <input
+                    id="name"
+                    class="input-box"
+                    type="text"
+                    name="name"
+                    placeholder="Marvin the Paranoid Android"
+                    required>
+                <label id="email-label" for="name">Your E-mail</label>
+                <input
+                    id="email"
+                    class="input-box"
+                    type="email"
+                    name="email"
+                    placeholder="zaphod.beeblebrox@galaxy.com"
+                    required>
+                <label id="heir-label" for="heirs">Designated Heir(s)</label>
+                <input
+                    id="heirs"
+                    class="input-box"
+                    type="text"
+                    name="hairs"
+                    placeholder="My dog"
+                    required>
+                <label id="number-label" for="age">Your Age <small>(You must be at least 18)</small></label>
+                <input
+                    id="number"
+                    class="input-box"
+                    type="number"
+                    name="age"
+                    min="18"
+                    max="1000"
+                    placeholder="13.82 billion years"
+                    required>
+            </div>
+
+            <div id="destination-box">
+                <p class="bold-text">Choose your destination</p>
+                <label class="label-box">
+                    <input
+                        type="radio"
+                        required
+                        name="backhole-choice"
+                        value="sagittarius-a"
+                        class="radio">Sagittarius-A
+                </label>
+                <label class="label-box">
+                    <input
+                        type="radio"
+                        required
+                        name="backhole-choice"
+                        value="centaurus-a"
+                        class="radio">Centaurus-A
+                </label>
+                <label class="label-box">
+                    <input
+                        type="radio"
+                        required
+                        name="backhole-choice"
+                        value="messier-31"
+                        class="radio">Messier 31
+                </label>
+                <label class="label-box">
+                    <input
+                        type="radio"
+                        required
+                        name="backhole-choice"
+                        value="abell-85"
+                        class="radio">Abell 85
+                </label>
+                <label class="label-box">
+                    <input
+                        type="radio"
+                        required
+                        name="backhole-choice"
+                        value="user-choice"
+                        class="radio">Black hole of your choice <small>(See bottom box)</small>
+                </label>
+            </div>
+
+            <div id="item-box">
+                <p class="bold-text">Choose a beloved item you want to take with you</p>
+                <select id="dropdown" name="item" class="item" required>
+                  <option disabled selected value>Select an item</option>
+                  <option value="mother-in-law">Mother-in-law photo</option>
+                  <option value="teddy-bear">Childhood teddy bear</option>
+                  <option value="-smartphone">Secret smartphone</option>
+                  <option value="credit-card">Credit card</option>
+                  <option value="laptop">Laptop</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+            <div id="last-meal-box">    
+                <p class="bold-text">What would you like to eat for your last meal?
+                    <small>(Choose all that apply)</small></p>
+                <label class="label-box">
+                    <input
+                        type="checkbox"
+                        name="fish-and-chips"
+                        value="fish-and-chips"
+                        class="checkbox"
+                        >Fish and Chips
+                </label>
+                <label class="label-box">
+                    <input
+                        type="checkbox"
+                        name="spaghetti-and-meatballs"
+                        value="spaghetti-and-meatballs"
+                        class="checkbox"
+                        >Spaghetti and Meatballs
+                </label>
+                <label class="label-box">
+                    <input
+                        type="checkbox"
+                        name="vegetable-soup"
+                        value="vegetable-soup"
+                        class="checkbox"
+                        >Vegetable Soup
+                </label>
+                <label class="label-box">
+                    <input
+                        type="checkbox"
+                        name="margherita-pizza"
+                        value="margherita-pizza"
+                        class="checkbox"
+                        >Margherita Pizza
+                </label>
+                <label class="label-box">
+                    <input
+                        type="checkbox"
+                        name="tiramisu"
+                        value="tiramisu"
+                        class="checkbox"
+                        >Tiramisù
+                </label>
+                <label class="label-box">
+                    <input
+                        type="checkbox"
+                        name="burger-and-fries"
+                        value="burger-and-fries"
+                        class="checkbox"
+                        >Burger and Fries
+                </label>
+                <label class="label-box">
+                    <input
+                        type="checkbox"
+                        name="steak-and-salad"
+                        value="steak-and-salad"
+                        class="checkbox"
+                        >Steak and Salad
+                </label>
+            </div>
+
+            <div id="personal-choice">
+                <p class="bold-text">Know a particular black hole you'd like to be a part of?</p>
+                <textarea
+                  id="blackhole-choice"
+                  class="blackhole-choice"
+                  name="blackhole-choice"
+                  placeholder="Enter your black hole coordinates here..."
+                ></textarea>
+            </div>
+
+            <footer class="center-text">
+                <img id="panic" alt="Don't Panic!" src="panic.svg">
+                <p id="towel-line" class="bold-text">And don't forget to bring a towel. It'll help.</p>
+                <div id="centered-button-box"><button id="submit" type="submit">Send application</button></div>
+                <p><small>*As you approach the black hole, you may feel a slight pulling. Don't worry.
+                    <br>
+                    It will last less than a second as your body is torn to shreds on a molecular level.</small></p>
+            </footer>
+        </form>
+
+    </main>
+</body>
+
+</html>
+
+
